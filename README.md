@@ -1,6 +1,7 @@
 # LoggerShiftHook
 
-TODO: Write a gem description
+This gem is logger library extension.
+When shifting a log, do hook.
 
 ## Installation
 
@@ -18,7 +19,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'logger'
+require 'logger_shift_hook'
+
+# register with initializing
+log = Logger.new('hoge.log', 'daily') do
+  # do something
+end
+
+log.shift_hook do
+  # do something
+end
+```
 
 ## Contributing
 
