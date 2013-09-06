@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = LoggerShiftHook::VERSION
   spec.authors       = ["Keisuke KITA"]
   spec.email         = ["kei.kita2501@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Hook when log shift}
+  spec.summary       = %q{Hook when log shift}
+  spec.homepage      = "https://github.com/kitak/logger_shift_hook"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
