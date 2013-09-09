@@ -1,6 +1,6 @@
 
 class Logger
-  def initialize_with_hook(logdev, shift_age, shift_size, &blk)
+  def initialize_with_hook(logdev, shift_age = 0, shift_size = 1048576, &blk)
     initialize_without_hook(logdev, shift_age, shift_size)
     shift_hook &blk if blk
   end
